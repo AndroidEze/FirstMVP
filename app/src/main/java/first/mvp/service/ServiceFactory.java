@@ -6,9 +6,10 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class ServiceFactory {
     public static final String GITHUB_ENDPOINT = "https://api.github.com";
-    public static <T> T createRetrofitService(final Class<T> clazz) {
+    public static final String USER_ENDPOINT = "http://uinames.com/";
+    public static <T> T createRetrofitService(final Class<T> clazz, final String url) {
         Retrofit retrofit = new Retrofit.Builder()
-                .baseUrl(GITHUB_ENDPOINT)
+                .baseUrl(url)
                 .addConverterFactory(GsonConverterFactory.create())
                 .addCallAdapterFactory(RxJavaCallAdapterFactory.create())
                 .build();

@@ -18,4 +18,7 @@ public class Data {
         add("facebook");
         add("rails");
     }};
+    public static List<String> userList = new ArrayList<String>() {{
+        add("5");
+    }};
 }
