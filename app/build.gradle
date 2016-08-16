@@ -27,5 +27,8 @@ dependencies {
     compile 'com.jakewharton:butterknife:8.1.0'
     compile 'com.android.support:appcompat-v7:24.1.1'
     compile 'com.android.support.constraint:constraint-layout:1.0.0-alpha6'
+    compile "com.squareup.retrofit2:retrofit:2.0.1"
+    compile "com.squareup.retrofit2:adapter-rxjava:2.0.1"
+    compile "com.squareup.retrofit2:converter-gson:2.0.1"
     testCompile 'junit:junit:4.12'
 }

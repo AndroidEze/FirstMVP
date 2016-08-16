@@ -10,7 +10,7 @@ import butterknife.ButterKnife;
 import first.mvp.view.GithubMVPView;
 import plyom.firstmvp.R;
 
-public class MainActivity extends AppCompatActivity implements GithubMVPView{
+public class MainActivity extends AppCompatActivity {
 
     @BindView(R.id.button_clear) Button buttonClear;
     @BindView(R.id.button_find) Button buttonFind;
@@ -20,10 +20,5 @@ public class MainActivity extends AppCompatActivity implements GithubMVPView{
         super.onCreate(savedInstanceState);
         ButterKnife.bind(this);
         setContentView(R.layout.activity_main);
-    }
-
-    @Override
-    public Context getContext() {
-        return getContext();
     }
 }
