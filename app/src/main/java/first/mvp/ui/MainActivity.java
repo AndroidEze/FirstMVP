@@ -1,13 +1,11 @@
 package first.mvp.ui;
 
-import android.content.Context;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.Button;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
-import first.mvp.view.GithubMVPView;
 import plyom.firstmvp.R;
 
 public class MainActivity extends AppCompatActivity {
