@@ -8,9 +8,17 @@ import com.google.gson.annotations.SerializedName;
  */
 
 public class User {
+    @SerializedName("name")
+    @Expose
     private String name;
+    @SerializedName("surname")
+    @Expose
     private String surname;
+    @SerializedName("gender")
+    @Expose
     private String gender;
+    @SerializedName("region")
+    @Expose
     private String region;
 
     public User(String name, String surname, String gender, String region) {
