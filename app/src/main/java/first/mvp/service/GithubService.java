@@ -7,5 +7,5 @@ import rx.Observable;
 
 
 public interface GithubService {
-    @GET("users/{user}/repos") Observable<Github> getUser(@Path("user") String user);
+    @GET("users/{login}/") Observable<Github> getUser(@Path("login") String login);
 }
